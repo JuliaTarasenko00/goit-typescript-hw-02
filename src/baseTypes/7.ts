@@ -13,13 +13,5 @@ enum Day {
 }
 
 function isWeekend(day: Day): boolean {
-  switch (day) {
-    case Day.Saturday:
-    case Day.Sunday:
-      return true;
-    default:
-      return false;
-  }
+  return day === Day.Saturday || day === Day.Sunday;
 }
-
-// console.log(isWeekend(Day.Monday));

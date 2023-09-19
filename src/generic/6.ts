@@ -14,9 +14,7 @@ type User = {
   password: string;
 };
 
-type NewTypeUser = Pick<User, "email" | "password">;
-
-function createOrUpdateUser(initialValues: NewTypeUser) {
+function createOrUpdateUser(initialValues: Partial<User>) {
   console.log(initialValues);
 }
 
